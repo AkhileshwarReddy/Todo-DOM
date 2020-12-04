@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    width: 75%;
+}
+
+.create-button {
+    width: 25%;
+}
+
+#projects {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects uk-button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+#todos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-teal {
+    background-color: teal;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-container ul, .todos-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container li{
+    margin: 1% auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.projects-container li div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects-container li div p {
+    margin: auto;
+}
+
+.projects-container li div button:hover {
+    color: red;
+}
+
+.active-project {
+    background: #000;
+    color: #fff;
+}
+
+.todo {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    border-bottom: 1px solid teal;
+}
+
+#check-circle {
+    flex-basis: 10%;
+}
+
+.todo p {
+    flex-basis: 60%;
+    font-size: 14px;
+}
+
+.todo-actions {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.todo box-icon {
+    cursor: pointer;
+}
+
+.todo-actions box-icon {
+    margin-left: 2%;
+}
+
+.priority-high {
+    background-color: red;
+    color: white
+}
+
+.priority-medium {
+    background-color: orange;
+    color: white;
+}
+
+.priority-low {
+    background: black;
+    color: white;
+}
+
+.todo-item-container h2 {
+    font-size: 1rem;
+}
+
+.todo-item-container p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+.todo-detail-bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #todos {
+        width: 100%;
+    }
+
+    #projects {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container li {
+        border-bottom: 1px solid teal;
+    }
+
+    .projects-container li:nth-child(odd) {
+        border-right: 2px solid teal;
+    }
+}
+
+@media (max-width: 420px) {
+    .todo-detail-bottom-container {
+        flex-direction: column;
+    }
+}

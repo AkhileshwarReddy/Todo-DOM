@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="./node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <title>Todo</title>
+</head>
+<body>
+    <!-- TODO: NAVBAR -->
+    <header>
+
+    </header>
+
+    <div class="main-container">
+        <!-- TODO: PROJECTS -->
+        <section id="projects" class="uk-section-muted">
+            <div class="uk-button-group">
+                <button class="title uk-button">PROJECTS</button>
+                <button class="uk-button bg-teal create-button" uk-icon="icon: plus" uk-toggle="target: #create-project"></button>
+            </div>
+            <div class="projects-container">
+                <ul></ul>
+            </div>
+        </section>
+    
+        <!-- TODO: TODOS -->
+        <section id="todos">
+            <div class="uk-button-group">
+                <button class="title uk-button">TODOS</button>
+                <button id="createTodoButton" class="create-button uk-button bg-teal" uk-icon="icon: plus" uk-toggle="target: #create-todo"></button>
+            </div>
+            <div class="todos-container">
+                <ul>
+                    <li class="uk-card uk-card-hover">
+                        <div class="todo">
+                            <box-icon id="check-circle" name='circle'></box-icon>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis nobis vitae, libero asperiores officia?</p>
+                            <div class="todo-actions">
+                                <box-icon type='solid' name='trash'></box-icon>
+                                <box-icon name='edit-alt'></box-icon>
+                                <div class="uk-inline">
+                                    <button uk-icon="icon: chevron-down"></button>
+                                    <div uk-dropdown="mode: click">
+                                        <p><b>Priority</b></p>
+                                        <div class="uk-button-group priority-flags">
+                                            <button class="uk-button uk-button-danger">High</button>
+                                            <button class="uk-button uk-button-secondary">Medium</button>
+                                            <button class="uk-button">Low</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-card uk-card-hover">
+                        <div class="todo">
+                            <box-icon id="check-circle" name='circle'></box-icon>
+                            <p>Lorem ipsum dolor sit amet libero asperiores officia?</p>
+                            <div class="todo-actions">
+                                <box-icon type='solid' name='trash'></box-icon>
+                                <box-icon name='edit-alt'></box-icon>
+                                <div class="uk-inline">
+                                    <button uk-icon="icon: chevron-down"></button>
+                                    <div uk-dropdown="mode: click">
+                                        <p><b>Priority</b></p>
+                                        <div class="uk-button-group priority-flags">
+                                            <button class="uk-button uk-button-danger">High</button>
+                                            <button class="uk-button uk-button-secondary">Medium</button>
+                                            <button class="uk-button">Low</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-card uk-card-hover">
+                        <div class="todo">
+                            <box-icon id="check-circle" color="green" name='check-circle'></box-icon>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?</p>
+                            <div class="todo-actions">
+                                <box-icon type='solid' name='trash'></box-icon>
+                                <box-icon name='edit-alt'></box-icon>
+                                <div class="uk-inline">
+                                    <button uk-icon="icon: chevron-down"></button>
+                                    <div uk-dropdown="mode: click">
+                                        <p><b>Priority</b></p>
+                                        <div class="uk-button-group priority-flags">
+                                            <button class="uk-button priority-high">High</button>
+                                            <button class="uk-button priority-medium">Medium</button>
+                                            <button class="uk-button priority-low">Low</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-card uk-card-hover">
+                        <div class="todo">
+                            <box-icon id="check-circle" color="red" name='circle'></box-icon>
+                            <p>Lorem ipsum dolor vitae, libero asperiores officia?</p>
+                            <div class="todo-actions">
+                                <box-icon type='solid' name='trash'></box-icon>
+                                <box-icon name='edit-alt'></box-icon>
+                                <div class="uk-inline">
+                                    <button uk-icon="icon: chevron-down"></button>
+                                    <div uk-dropdown="mode: click">
+                                        <p><b>Priority</b></p>
+                                        <div class="uk-button-group priority-flags">
+                                            <button class="uk-button uk-button-danger">High</button>
+                                            <button class="uk-button uk-button-secondary">Medium</button>
+                                            <button class="uk-button">Low</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-card uk-card-hover">
+                        <div class="todo">
+                            <box-icon id="check-circle" color="orange" name='circle'></box-icon>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis nobis</p>
+                            <div class="todo-actions">
+                                <box-icon type='solid' name='trash'></box-icon>
+                                <box-icon name='edit-alt'></box-icon>
+                                <div class="uk-inline">
+                                    <button uk-icon="icon: chevron-down"></button>
+                                    <div uk-dropdown="mode: click">
+                                        <p><b>Priority</b></p>
+                                        <div class="uk-button-group priority-flags">
+                                            <button class="uk-button uk-button-danger">High</button>
+                                            <button class="uk-button uk-button-secondary">Medium</button>
+                                            <button class="uk-button">Low</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- TODO: MODALS -->
+
+    <!-- TODO: CREATE PROJECT -->
+    <div id="create-project" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Create new project</h2>
+            <form class="uk-form-stacked">
+                <div>
+                    <label class="uk-form-label">Name</label>
+                    <div class="uk-form-controls">
+                        <input type="text" class="uk-input" id="projectName" placeholder="Project name" required>
+                    </div>
+                </div>
+            </form>
+            <div class="uk-margin-top">
+                <button class="uk-button uk-button-danger uk-modal-close">Cancel</button>
+                <button class="uk-button bg-teal uk-modal-close" id="saveProjectBtn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO: CREATE TODO -->
+    <div id="create-todo" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Create new task</h2>
+            <form class="uk-form-stacked">
+                <div>
+                    <label class="uk-form-label">Title</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="title" type="text" placeholder="Title..." required>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Description</label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-input" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Due Date</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="datetime-local" id="dueDate" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Project</label>
+                    <div class="uk-form-controls" id="projectsDropdownContainer">
+                        <select class="uk-input" id="project"></select>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Priority</label>
+                    <div class="uk-form-controls">
+                        <select id="priority" class="uk-input">
+                            <option value="3">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="1">High</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="uk-margin-top">
+                <button class="uk-button uk-button-danger uk-modal-close">Cancel</button>
+                <button class="uk-button bg-teal uk-modal-close" id="saveTodoBtn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO: UPDATE TODO -->
+    <div id="update-todo" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Update task</h2>
+            <form class="uk-form-stacked">
+                <input type="text" id="updateTodoId" hidden>
+                <div>
+                    <label class="uk-form-label">Title</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="updateTodoTitle" type="text" placeholder="Title..." required>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Description</label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-input" id="updateTodoDescription" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Due Date</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="datetime-local" id="updateTodoDueDate" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Project</label>
+                    <div class="uk-form-controls" id="updateTodoProjectsDropdownContainer">
+                        <select class="uk-input" id="updateTodoProject"></select>
+                    </div>
+                </div>
+                <div>
+                    <label class="uk-form-label">Priority</label>
+                    <div class="uk-form-controls">
+                        <select id="updateTodoPriority" class="uk-input">
+                            <option value="3">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="1">High</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="uk-margin-top">
+                <button class="uk-button uk-button-danger uk-modal-close">Cancel</button>
+                <button class="uk-button bg-teal uk-modal-close" id="updateTodoBtn">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO: TODO DETAILS -->
+    <div id="todo-detail" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" uk-close></button>
+            <h1 class="uk-modal-title">Task detail</h1>
+            <div class="todo-item-container">
+                <h2>Title</h2>
+                <p id="todoDetailTitle"></p>
+            </div>
+            <div id="todoDetailDescriptionContainer" class="todo-item-container">
+                <h2>Description</h2>
+                <p id="todoDetailDescription"></p>
+            </div>
+            <div class="todo-detail-bottom-container">
+                <div class="todo-item-container">
+                    <h2>Due date</h2>
+                    <p id="todoDetailDueDate"></p>
+                </div>
+                <div class="todo-item-container">
+                    <h2>Project</h2>
+                    <p id="todoDetailProject"></p>
+                </div>
+                <div class="todo-item-container">
+                    <h2>Priority</h2>
+                    <p id="todoDetailPriority"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./dist/main.js"></script>
+</body>
+</html>
